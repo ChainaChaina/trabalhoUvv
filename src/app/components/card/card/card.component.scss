@@ -1,0 +1,50 @@
+.cardContainer{
+    margin: auto;
+    min-height: 7rem;
+    min-width: 30%;
+    max-width: 30%;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.name{
+    font-size: 2rem;
+    margin: 0.3rem auto;
+}
+
+.infos{
+    margin: 0.3rem 1rem;
+    p{
+        margin: 0.3rem;
+    }
+}
+
+.buttons{
+    margin: 1rem;
+    button{
+        min-width: 3rem;
+        min-height: 3rem;
+        font-size: 1rem;
+        border: 1px solid rgb(218, 218, 218);
+        border-radius: 5px;
+        background-color: transparent;
+        i{
+            margin: auto;
+        }
+    }
+    button:hover{
+        border: 0px solid rgb(218, 218, 218);
+    }
+}
+
+.delete:hover{
+    background-color: #d72503 !important;
+}
+
+
+.edit:hover{
+    background-color: #1fae51 !important;
+}
+
+
