@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Form, FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { Component, Input, OnInit, Output } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form',
@@ -9,12 +10,13 @@ import { Form, FormBuilder, FormControl, FormGroup } from '@angular/forms';
 export class FormComponent implements OnInit {
   
  
+  constructor(private router: Router, private formBuilder: FormBuilder,) { }
 
-  constructor(private formBuilder: FormBuilder,) { }
 
+  name = new FormControl('');
 
   ngOnInit(): void {
-  
+    
   }
 
   checkoutForm = this.formBuilder.group({
@@ -22,10 +24,16 @@ export class FormComponent implements OnInit {
     phone: ''
   });
 
+
+
   onSubmit(): void {
-    // Process checkout data here
     console.warn('Your order has been submitted', this.checkoutForm.value);
     this.checkoutForm.reset();
+  }
+
+  goTo(){
+    this.router.navigateByUrl('');
+    console.log(this.name)
   }
 
 }

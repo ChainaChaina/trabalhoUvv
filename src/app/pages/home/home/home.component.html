@@ -1,5 +1,5 @@
 <div class="container flex displayColumn">
-<button class="addNew">Add new</button>
+<button class="addNew" (click)="goTo()">Add new</button>
     <div class="shopping" *ngFor="let item of items">
         <app-card class="card" [name]=item.name [phone]=item.phone [CPF]=item.CPF></app-card>
     </div>

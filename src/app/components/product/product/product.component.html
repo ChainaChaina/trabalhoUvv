@@ -1,0 +1,10 @@
+<div class="container flex">
+    <div class="product" *ngFor="let product of products">
+        <div class="img"> <img src="https://picsum.photos/320/480" alt=""></div>
+        <div class="flex  spaceBetween">
+            <h1>{{product.name}}</h1>
+            <h1>{{ product.price | currency: 'BRL' }}</h1>
+        </div>
+    </div>
+  
+</div>

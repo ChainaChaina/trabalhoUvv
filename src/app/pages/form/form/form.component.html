@@ -2,7 +2,8 @@
     <h1 class="titleText">Novo cliente</h1>
 </div>
 
-<form action="" class="flex displayColumn formContainer">
+
+<form  class="flex displayColumn formContainer">
     <div class="form__group field">
         <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
         <label for="name" class="form__label">Name</label>
@@ -38,5 +39,5 @@
 </form>
 
 <div class="button flex">
-    <button>Submit</button>
+    <button (click)="goTo()" >Submit</button>
 </div>

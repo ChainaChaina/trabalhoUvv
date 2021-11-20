@@ -1,0 +1,16 @@
+.container{
+    flex-wrap: wrap;
+}
+
+.product{
+    margin: 3rem auto;
+    max-width: 20rem;
+    background-color: #fff;
+    min-height: 30rem;
+}
+
+.img{
+    max-height: 20rem;
+    max-width: 20rem;
+    overflow: hidden;
+}
